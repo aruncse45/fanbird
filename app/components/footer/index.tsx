@@ -16,11 +16,11 @@ const Footer = () => {
                      src="https://cdn.builder.io/api/v1/image/assets%2Ffb3ccc876dd442c6ae31d776377e35db%2F963653eb4812434581d08fb180b734f4"/>
                 <HandshakeIcon className={styles.handshakeIcon} fontSize="large"/>
                 <Image src={AwsLogo} alt="aws logo" height="150" width="150"/>
-                <Typography className={styles.language}  fontSize={12} color="white">Bangladesh | United states</Typography>
             </FlexDiv>
             <Typography className={styles.rights}  fontSize={12} color="white">Copyright © 2024 FanBird. All rights
                 reserved.</Typography>
-            <Typography className={styles.rights}  fontSize={12} color="white">TV & Privacy&nbsp;&nbsp;  | &nbsp;&nbsp; Cookie policy &nbsp;&nbsp; | &nbsp;&nbsp; Support</Typography>
+            <Typography className={styles.rights}  fontSize={12} color="white">TV & Privacy&nbsp;&nbsp;|&nbsp;&nbsp;Cookie policy&nbsp;&nbsp;|&nbsp;&nbsp;Support</Typography>
+            <Typography className={styles.rights} fontSize={12} color="white">Bangladesh&nbsp;&nbsp;|&nbsp;&nbsp;United states</Typography>
         </FlexDiv>
     );
 };
