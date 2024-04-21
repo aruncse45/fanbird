@@ -9,8 +9,7 @@ import Image from "next/image";
 import CornerView from "@/assets/images/angles/corner.png"
 import LeftView from "@/assets/images/angles/left.png"
 import RightView from "@/assets/images/angles/right.png"
-import TopView from "@/assets/images/angles/top.png"
-import GalleryView from "@/assets/images/angles/gallery.png"
+import GoalKeeperView from "@/assets/images/angles/goalkeeper.png"
 import cx from "classnames";
 import FlexDiv from "@/components/flexDiv";
 
@@ -103,19 +102,19 @@ const VideoSection = () => {
                          onClick={() => handleSlide(4, "https://www.youtube.com/embed/l0k2XUDo_vI")}>
                         <Typography fontWeight="600" fontSize={30} color="white" className={styles.angleName}>Goalkeeper
                             view</Typography>
-                        <Image src={GalleryView} alt="Angle 1" className={styles.slideImage}/>
+                        <Image src={GoalKeeperView} alt="Angle 1" className={styles.slideImage}/>
                     </div>
                     <div className={cx(styles.slide, {[styles.isActive]: cameraPosition === 5})}
                          onClick={() => handleSlide(4, "https://www.youtube.com/embed/2rGwti9qGhM")}>
                         <Typography fontWeight="600" fontSize={30} color="white" className={styles.angleName}>Corner
                             view</Typography>
-                        <Image src={TopView} alt="Angle 1" className={styles.slideImage}/>
+                        <Image src={CornerView} alt="Angle 1" className={styles.slideImage}/>
                     </div>
                     <div className={cx(styles.slide, {[styles.isActive]: cameraPosition === 6})}
                          onClick={() => handleSlide(4, "https://www.youtube.com/embed/06TZhvW-HzM")}>
                         <Typography fontWeight="600" fontSize={30} color="white" className={styles.angleName}>Side
                             view</Typography>
-                        <Image src={GalleryView} alt="Angle 1" className={styles.slideImage}/>
+                        <Image src={LeftView} alt="Angle 1" className={styles.slideImage}/>
                     </div>
                 </Slider>
             </div>

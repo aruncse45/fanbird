@@ -21,6 +21,12 @@
   width: 100%;
   justify-content: center;
   cursor: pointer;
+
+  &:hover {
+    .slideImage {
+      opacity: 1;
+    }
+  }
 }
 
 .isActive {
@@ -35,13 +41,6 @@
   width: 100%;
   height: 200px;
   opacity: 0.2;
-
-  &:hover {
-    opacity: 1;
-    .title {
-      color: red
-    }
-  }
 
   &:active {
     border: 0;
