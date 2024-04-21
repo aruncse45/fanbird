@@ -1,0 +1,59 @@
+@import "../styles/variables";
+@import "../styles/colors";
+@import "../styles/mixins";
+
+.main {
+  max-width: $desktop;
+}
+
+.medias {
+  background-color: white;
+  margin-top: $spacing-40;
+}
+
+.mediasContainer {
+  max-width: $desktop;
+}
+
+.container {
+  background-color: white;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: $spacing-8;
+}
+
+.title {
+  padding: $spacing-20 $spacing-0;
+}
+
+.icon {
+  color: #937dc2;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.viewBooksButton {
+  border: 2px solid $primaryColor;
+  color: $textColorWhite;
+  text-transform: unset;
+  padding: $spacing-12 $spacing-32;
+  font-size: $font-size-16;
+  font-weight: 500;
+  white-space: nowrap;
+  height: 50px;
+  background-color: $primaryColor;
+  margin-top: $spacing-8;
+  width: 100%;
+
+  &:hover {
+    background-color: #495057;
+  }
+}
+
+.products {
+  flex-wrap: wrap;
+  margin-bottom: $spacing-20;
+}

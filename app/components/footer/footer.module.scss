@@ -1,0 +1,30 @@
+@import "app/styles/colors";
+@import "app/styles/mixins";
+@import "app/styles/variables";
+
+.main {
+padding: $spacing-40 $spacing-0;
+  width: 100%;
+}
+
+.partners {
+  margin: auto;
+  width: 100%;
+}
+
+.rights {
+  margin: auto;
+  cursor: pointer;
+}
+
+.language {
+  position: absolute;
+  right: $spacing-20;
+  cursor: pointer;
+}
+
+.handshakeIcon {
+  height: 100px;
+  width: 100px;
+  color: white;
+}

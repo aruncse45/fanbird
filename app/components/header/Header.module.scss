@@ -1,0 +1,117 @@
+@import "../../styles/breakpoints";
+@import "../../styles/mixins";
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.container {
+  position: sticky;
+  top: 0;
+  background: $backgroundColorDark;
+  z-index: 1;
+  height: $primary-navbar-height;
+  @include tablet {
+    padding: $spacing-0 $spacing-16;
+  }
+  @include mobile {
+    padding: $spacing-0 $spacing-16;
+  }
+  @include desktop {
+    padding: $spacing-0 $spacing-32;
+  }
+}
+
+.link {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+}
+
+.tagLine {
+  min-width: 50px;
+}
+
+.search {
+  height: 36px;
+  width: 160px;
+  min-width: 100px;
+  background: #f1f1f1;
+
+  @include mobile {
+    padding: $spacing-4 $spacing-16;
+  }
+}
+
+.searchIconDesktop {
+  margin-right: -$spacing-8;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.searchIconTabletMobile {
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    margin-left: $spacing-60;
+  }
+  @include mobile {
+    margin-left: $spacing-16;
+  }
+}
+
+.links {
+  //margin-left: 200px;
+}
+
+.iconsDesktopTablet {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.iconsMobile {
+  @include desktop {
+    display: none !important;
+  }
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.iconsMobile {
+  flex: 1;
+}
+
+.icon {
+  color: #937dc2;
+}
+
+.menuIcon {
+  margin-left: $spacing-8;
+  @include desktop {
+    display: none;
+  }
+}
+
+.phoneNumber {
+  margin-right: $spacing-8;
+  @include desktop {
+    display: none;
+  }
+}
+
+.fullDivider {
+  background: $primaryColor;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottomMenu {
+  padding: $spacing-0 $spacing-16;
+}

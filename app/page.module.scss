@@ -1,0 +1,16 @@
+@import "./styles/variables";
+@import "./styles/colors";
+@import "./styles/mixins";
+
+.main {
+  max-width: $desktop;
+}
+
+.medias {
+  background-color: white;
+  margin-top: $spacing-40;
+}
+
+.mediasContainer {
+  max-width: $desktop;
+}

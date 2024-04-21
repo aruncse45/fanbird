@@ -1,0 +1,12 @@
+@import "./../../styles/variables";
+
+
+.slider {
+  :global {
+    .slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } }
+  }
+}
+
+.title {
+  padding: $spacing-20 $spacing-20;
+}

@@ -1,0 +1,60 @@
+@import "./../../styles/variables";
+
+.videoContainer {
+  iframe {
+    width: 100%;
+  }
+}
+
+.slider {
+  :global {
+    .slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } }
+  }
+}
+
+.slide {
+  display: flex !important;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.isActive {
+  border-bottom: 4px solid green;
+}
+
+.title {
+  padding: $spacing-20 $spacing-20;
+}
+
+.slideImage {
+  width: 100%;
+  height: 200px;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    .title {
+      color: red
+    }
+  }
+
+  &:active {
+    border: 0;
+  }
+}
+
+.languageContainer {
+  //background-color: white;
+  padding: $spacing-20;
+}
+
+.languageSelect {
+  background-color: white;
+  width: 200px;
+}
+
+.angleName {
+  position: absolute;
+  align-self: center;
+}
