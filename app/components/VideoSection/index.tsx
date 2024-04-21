@@ -25,14 +25,14 @@ const VideoSection = () => {
     };
     const [cameraPosition, setCameraPosition] = useState(1);
     const [currentVideoLink, setCurrentVideoLink] = useState("https://www.youtube.com/embed/6cyWeWlDd-s?autoplay=1&mute=1&enablejsapi=1&modestbranding=1&amp;title=&amp;&amp;rel=0&amp;controls=0&showinfo=0&fs=0");
-    const handleSlide = (cameraPosition) => {
+    const handleSlide = (cameraPosition: any) => {
         console.log({videoTime: videoTimeTrack})
         setCameraPosition(cameraPosition);
         setCurrentVideoLink(`https://www.youtube.com/embed/6cyWeWlDd-s?autoplay=1&start=${videoTimeTrack}`);
     }
 
     useEffect(()=> {
-        let interval;
+        let interval: any;
         setTimeout(()=> {
              interval = setInterval(()=> {
                 setVideoTimeTrack((prev)=> prev + 1);
@@ -48,22 +48,22 @@ const VideoSection = () => {
                 <Typography fontWeight="600" fontSize={24} color="white">Multilingual commentary</Typography>
                 <Select defaultValue="Bangla" labelId="demo-simple-select-helper-label" input={<OutlinedInput/>}
                         className={styles.languageSelect}>
-                    <MenuItem name="1" value="Bangla">
+                    <MenuItem key="1" value="Bangla">
                         Bangla
                     </MenuItem>
-                    <MenuItem name="2" value="English">
+                    <MenuItem key="2" value="English">
                         English
                     </MenuItem>
-                    <MenuItem name="3" value="French">
+                    <MenuItem key="3" value="French">
                         French
                     </MenuItem>
-                    <MenuItem name="4" value="Russian">
+                    <MenuItem key="4" value="Russian">
                         Russian
                     </MenuItem>
-                    <MenuItem name="5" value="Japanese">
+                    <MenuItem key="5" value="Japanese">
                         Japanese
                     </MenuItem>
-                    <MenuItem name="6" value="...">
+                    <MenuItem key="6" value="...">
                         ...
                     </MenuItem>
                 </Select>
