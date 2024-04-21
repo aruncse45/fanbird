@@ -24,7 +24,7 @@ const VideoSection = () => {
         slidesToScroll: 1,
     };
     const [cameraPosition, setCameraPosition] = useState(1);
-    const [currentVideoLink, setCurrentVideoLink] = useState("https://www.youtube.com/embed/2rGwti9qGhM?autoplay=1&enablejsapi=1&modestbranding=1&amp;title=&amp;&amp;rel=0&amp;controls=0&showinfo=0&fs=0");
+    const [currentVideoLink, setCurrentVideoLink] = useState("https://www.youtube.com/embed/2rGwti9qGhM?autoplay=1&mute=1&enablejsapi=1&modestbranding=1&amp;title=&amp;&amp;rel=0&amp;controls=0&showinfo=0&fs=0");
 
     const handleSlide = (cameraPosition: any, videoUrl: any) => {
         setCameraPosition(cameraPosition);
