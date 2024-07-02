@@ -53,7 +53,7 @@ const WatchMedias = () => {
                     </figcaption>
                 </figure>
             </FlexDiv>
-            <Image src={Subscription} alt="subscription" />
+            <Image src={Subscription} alt="subscription" className={styles.subscription} />
         </FlexDiv>
     )
 };

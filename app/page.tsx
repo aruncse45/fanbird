@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Container className={styles.main} disableGutters>
                 <VideoSection/>
-                <AllVideos/>
+                {/*<AllVideos/>*/}
             </Container>
             <div className={styles.medias}>
                 <Container className={styles.mediasContainer} disableGutters>
