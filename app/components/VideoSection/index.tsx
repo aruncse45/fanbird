@@ -12,8 +12,6 @@ import RightView from "@/assets/images/angles/right.png"
 import GoalKeeperView from "@/assets/images/angles/goalkeeper.png"
 import cx from "classnames";
 import FlexDiv from "@/components/flexDiv";
-import Video from 'next-video';
-import SideViewVideo from "/public/videos/sideView.mp4";
 
 const VideoSection = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
